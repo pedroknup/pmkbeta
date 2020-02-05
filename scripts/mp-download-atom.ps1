@@ -413,7 +413,7 @@ switch ($PSCmdlet.ParameterSetName)
             foreach ($platform in $platforms){
                 foreach ($arch in $architectures){
                     Write-Host -f green "Download prebuild native binding for runtime $runtime : $runtime_ver, abi: $abi_ver, $platform, $arch"
-                    $OK = DownloadPrebuild -version $runtime_ver -platform $platform -arch $arch -runtime $runtime
+                    $OK = DownloadPrebuild -version $runtime_ver -platform $platform -arch $arch -runtime electron
                     if ( $OK ) {
                         # now copy the bindins to native_modules
                         HarvestNativeBinding -platform $platform -arch $arch -runtime $runtime -runtime_ver $runtime_ver -module_name $module_name -abi_ver $abi_ver 
