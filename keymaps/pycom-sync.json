@@ -1,0 +1,12 @@
+{
+  "atom-workspace": {
+    "ctrl-alt-s": "pmkbeta:upload",
+    "ctrl-shift-s": "pmkbeta:uploadFile",
+    "ctrl-alt-t": "pmkbeta:toggleREPL",
+    "ctrl-alt-c": "pmkbeta:connect",
+    "ctrl-alt-d": "pmkbeta:disconnect",
+    "ctrl-alt-r": "pmkbeta:run",
+    "ctrl-shift-enter": "pmkbeta:runselection",
+    "ctrl-r": "pmkbeta:clearTerminal"
+  }
+}

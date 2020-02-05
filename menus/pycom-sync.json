@@ -1,0 +1,43 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "pmkbeta",
+        "submenu": [
+          {
+            "label": "Toggle Pycom Console",
+            "command": "pmkbeta:toggleREPL"
+          },
+          {
+            "label": "Run current file",
+            "command": "pmkbeta:run"
+          }
+        ]
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "pmkbeta",
+          "submenu": [
+            {
+              "label": "Toggle Pycom Console",
+              "command": "pmkbeta:toggleREPL"
+            },
+            {
+              "label": "Run current file",
+              "command": "pmkbeta:run"
+            },
+            {
+              "label": "Synchronize project",
+              "command": "pmkbeta:sync"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

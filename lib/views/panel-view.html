@@ -1,0 +1,58 @@
+<div id="pmkbeta" class="pmkbeta pmkbeta-open">
+  <div id="pmkbeta-resizer"></div>
+  <span class="font-size-measurement">x</span>
+  <div id="pmkbeta-overlay-contents"></div>
+
+  <div id="pycom-top-bar">
+    <div id="pmkbeta-options-left">
+      <button id="pmkbeta-projects" class="has-sub top-button">
+        <span class="fa fa-folder"></span>
+        <span class="button-title" id="project-name"
+          >No project...</span
+        >
+        <div class="open-subnav">
+          <span class="fa fa-chevron-up"></span>
+        </div>
+        <div class="subnav left"></div>
+      </button>
+
+      <button id="pmkbeta-connect" class="has-sub top-button">
+        <span class="fa fa-microchip"></span>
+        <span class="button-title">Connect Device</span>
+        <div class="open-subnav">
+          <span class="fa fa-chevron-up"></span>
+        </div>
+        <div class="subnav left">
+          <div id="pmkbeta-connect-all">
+            <span class="fa fa-"></span> Open all connections
+          </div>
+          <div id="pmkbeta-close-all">
+            <span class="fa fa-"></span> Close all connections
+          </div>
+          <span class="separator" id="pmkbeta-comports-list">
+            <div class="loading_text">Loading comport list...</div>
+          </span>
+          <span class="separator" id="pmkbeta-address-list">
+            <div class="loading_text">Loading address list...</div>
+          </span>
+        </div>
+      </button>
+      <div id="pmkbeta-connection-tabs"></div>
+    </div>
+
+    <div id="pmkbeta-buttons">
+      <button style="font-size: 14px;" id="close">
+        <span class="fa fa-times"></span>
+      </button>
+    </div>
+  </div>
+
+  <div id="pmkbeta-overlay"></div>
+
+  <div id="pmkbeta-terminal-area">
+    <div id="pmkbeta-terminal-placeholder" class="open">
+      No terminal open. Use the 'Connect Device' button to open a
+      device.
+    </div>
+  </div>
+</div>
