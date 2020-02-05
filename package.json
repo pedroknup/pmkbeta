@@ -2,7 +2,7 @@
   "name": "pmkbeta",
   "version": "0.0.0",
   "description": "pmk beta ",
-  "repository": "https://github.com/pedroknup/pmkbeta.git",
+  "repository": "https://github.com/pedroknup/pmkbeta",
   "main": "./lib/main.js",
   "keywords": [],
   "engines": {
