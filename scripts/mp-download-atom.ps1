@@ -149,9 +149,9 @@ function DownloadPrebuild {
             &"$root_folder\node_modules\.bin\prebuild-install.cmd" --runtime $runtime --target $version --arch $arch --platform $platform --tag-prefix $prefix
         } else {
             # linux / mac : same command , slightly different path
-            node_modules/.bin/prebuild-install --runtime $runtime --target $version --arch $arch --platform $platform --tag-prefix $prefix
+            # Write-Host "$root_folder/node_modules/.bin/prebuild-install --runtime $runtime --target $version --arch $arch --platform $platform --tag-prefix $prefix"
             &"$root_folder/node_modules/.bin/prebuild-install" --runtime $runtime --target $version --arch $arch --platform $platform --tag-prefix $prefix
-        }
+      }
     }  catch {
         Write-Error "Unable to run prebuild-install. Did you run 'npm add prebuild-install --save-dev ?'" 
     }
@@ -413,7 +413,7 @@ switch ($PSCmdlet.ParameterSetName)
             foreach ($platform in $platforms){
                 foreach ($arch in $architectures){
                     Write-Host -f green "Download prebuild native binding for runtime $runtime : $runtime_ver, abi: $abi_ver, $platform, $arch"
-                    $OK = DownloadPrebuild -version $runtime_ver -platform $platform -arch $arch -runtime electron
+                    $OK = DownloadPrebuild -version $runtime_ver -platform $platform -arch $arch -runtime $runtime
                     if ( $OK ) {
                         # now copy the bindins to native_modules
                         HarvestNativeBinding -platform $platform -arch $arch -runtime $runtime -runtime_ver $runtime_ver -module_name $module_name -abi_ver $abi_ver 
