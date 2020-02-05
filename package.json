@@ -1,6 +1,6 @@
 {
   "name": "pmkbeta",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "pmk beta ",
   "repository": "https://github.com/pedroknup/pmkbeta",
   "main": "./lib/main.js",
