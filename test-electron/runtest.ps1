@@ -1,6 +1,6 @@
 #!/usr/bin/env pwsh
 param(
-    $electron_version = '6.1.2'
+    $electron_version = '4.2.7'
 )
 # '4.2.5','5.0.10','6.1.2'
 
